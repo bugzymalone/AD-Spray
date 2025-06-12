@@ -163,8 +163,8 @@ def spray_passwords(dc_ip, users, passwords, pw_quantity, per_request_delay_ms, 
 def main():
     parser = argparse.ArgumentParser(description="AD Password Spraying Tool")
     parser.add_argument("--dc-ip", required=True, help="IP address of the Domain Controller")
-    parser.add_argument("--ad-domain", required=True, help="AD domain (e.g., ANC.local)")
-    parser.add_argument("--ad-user", required=True, help="AD username for querying the user list (e.g., jonadmin). Domain will be prepended if not provided.")
+    parser.add_argument("--ad-domain", required=True, help="AD domain (e.g., ABC.local)")
+    parser.add_argument("--ad-user", required=True, help="AD username for querying the user list (e.g., joe). Domain will be prepended if not provided.")
     parser.add_argument("--ad-pass", required=True, help="AD password for querying the user list")
     parser.add_argument("--passwords", help="Optional file path to the passwords list (passwords.txt). If not provided, default passwords will be used.")
     parser.add_argument("--users", help="Optional file path for user list (if not auto-retrieved)")
